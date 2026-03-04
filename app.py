@@ -151,7 +151,7 @@ class DVRCNN(nn.Module):
 @st.cache_resource
 def load_model():
     checkpoint = torch.load(
-        "last_checkpoint (14).pt",
+        "last_checkpoint_14.pt",
         map_location="cpu",
         weights_only=False
     )
