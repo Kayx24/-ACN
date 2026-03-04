@@ -165,7 +165,12 @@ def load_model():
 
     return model
 
-model = load_model()
+try:
+    model = load_model()
+    print("MODEL LOADED SUCCESSFULLY")
+except Exception as e:
+    print("MODEL LOAD ERROR:", e)
+    raise e
 
 #Streamlit UI
 
